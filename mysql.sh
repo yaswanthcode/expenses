@@ -11,7 +11,7 @@ Y="\e[33m"
 N="\e[0m"
 
 VALIDATE(){
-    if [ $1 -ne 0]
+    if [ $1 -ne 0 ]
     then
         echo -e "$2... $R FAILURE $N"
     else
@@ -30,7 +30,7 @@ fi
 dnf install mysql-server -y &>>LOGFILE
 VALIDATE $? "Installation of MySQL"
 
-systemctl enable mysqld -y &>>LOGFILE
+systemctl enable mysqlld -y &>>LOGFILE
 VALIDATE $? "Enabling MySQL "
 
 systemctl start mysqld &>>LOGFILE
