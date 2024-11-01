@@ -18,6 +18,9 @@ VALIDATE(){
         echo -e "$2... $G SUCCESS $N"
     fi
 }
+echo "Please enter DB password:"
+read  mysql_root_password
+
 
 if [ $USERID -ne 0]
 then
