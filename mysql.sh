@@ -22,7 +22,7 @@ echo "Please enter DB password:"
 read  mysql_root_password
 
 
-if [ $USERID -ne 0]
+if [ $USERID -ne 0 ]
 then
     echo -e " You are not a super user $R... EXITING $N "
     exit 1
