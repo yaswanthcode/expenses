@@ -69,7 +69,7 @@ npm install &>>$LOGFILE #npm install to download all dependencies and passing ou
 VALIDATE $? "Installing nodejs dependencies"
 
 #check your repo and path
-cp /d/devopsgit/expenses/backend.service /etc/systemd/system/backend.service &>>$LOGFILE #copying backend.service file to another location  and passing output status to the LOGFILE
+cp /home/ec2-user/expenses/backend.service /etc/systemd/system/backend.service &>>$LOGFILE #copying backend.service file to another location  and passing output status to the LOGFILE
 VALIDATE $? "Copied backend service"
 
 systemctl daemon-reload &>>$LOGFILE #reloading daemon  and passing output status to the LOGFILE
